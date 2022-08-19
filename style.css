@@ -84,7 +84,7 @@ button {
 }
 
 .personal input::placeholder,
-option {
+select {
     color: white;
     opacity: 0.5;
 }
@@ -101,7 +101,7 @@ option {
 .questions label {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     text-align: justify;
     gap: 8px;
 }
