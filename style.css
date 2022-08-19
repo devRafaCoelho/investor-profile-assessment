@@ -24,11 +24,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 header {
     margin: 50px 0;
+    text-align: center;
 }
 
 header h1 {
@@ -38,9 +38,122 @@ header h1 {
 
 form {
     width: 80%;
-    min-height: 100vh;
     margin-bottom: 30px;
     padding: 40px;
+    gap: 5px;
     border-radius: 5px;
     background-color: rgba(27, 27, 50, 0.8);
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.personal label,
+.questions p,
+.sugestions p {
+    font-size: 1.4rem;
+}
+
+.personal input,
+select,
+textarea,
+button {
+    all: unset;
+    box-sizing: border-box;
+}
+
+.personal input,
+.questions select {
+    width: 100%;
+    min-height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: start;
+    background-color: #202231;
+}
+
+.questions select {
+    cursor: pointer;
+}
+
+.personal input::placeholder,
+option {
+    color: white;
+    opacity: 0.5;
+}
+
+.input-container span {
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.personal input:focus {
+    border: 2px solid white;
+}
+
+.questions label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    gap: 8px;
+}
+
+.questions input {
+    min-height: 15px;
+    min-width: 15px;
+}
+
+.questions input:focus {
+    border: 1px solid white;
+
+}
+
+.questions select:focus {
+    border: 2px solid white;
+}
+
+.sugestions textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+    background-color: #202231;
+    color: white;
+}
+
+.sugestions textarea::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.sugestions textarea:focus {
+    border: 2px solid white;
+}
+
+button {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #202231;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+button:hover {
+    background-color: #44c08a;
+    color: #202231;
+    transition: all 0.2s ease-in;
 }
