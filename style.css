@@ -37,6 +37,7 @@ header h1 {
 }
 
 form {
+
     width: 80%;
     margin-bottom: 30px;
     padding: 40px;
@@ -81,6 +82,7 @@ button {
 
 .questions select {
     cursor: pointer;
+    appearance: auto;
 }
 
 .personal input::placeholder,
@@ -96,6 +98,10 @@ select {
 
 .personal input:focus {
     border: 2px solid white;
+}
+
+.questions {
+    display: none;
 }
 
 .questions label {
