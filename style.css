@@ -36,12 +36,18 @@ header h1 {
     font-family: 'Sarala', sans-serif;
 }
 
-form {
+#personal,
+#questions {
+    width: 100%;
+}
 
+form {
     width: 80%;
     margin-bottom: 30px;
     padding: 40px;
-    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 5px;
     background-color: rgba(27, 27, 50, 0.8);
 }
@@ -50,45 +56,39 @@ form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 15px;
     margin-bottom: 30px;
 }
 
 .personal label,
-.questions p,
-.sugestions p {
+p {
     font-size: 1.4rem;
 }
 
 input,
-select,
 textarea,
 button {
     all: unset;
     box-sizing: border-box;
 }
 
-.personal input,
-.questions select {
+.personal input {
     width: 100%;
     min-height: 50px;
     padding: 10px;
     border-radius: 5px;
-    align-items: center;
-    text-align: start;
     background-color: #202231;
 }
 
-.questions select {
-    cursor: pointer;
-    appearance: auto;
-}
-
 .personal input::placeholder,
-select {
+.sugestions textarea::placeholder {
     color: white;
     opacity: 0.5;
+}
+
+.personal input:focus,
+.sugestions textarea:focus {
+    border: 2px solid white;
 }
 
 .input-container span {
@@ -96,12 +96,44 @@ select {
     opacity: 0.7;
 }
 
-.personal input:focus {
-    border: 2px solid white;
+#questions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    width: 48%;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.card:hover {
+    background-color: white;
+    transition: all 0.2s ease-in;
+}
+
+#questions .specific {
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .questions {
     text-align: center;
+}
+
+.display {
+    display: none;
 }
 
 .questions label {
@@ -110,7 +142,6 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
     border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;
@@ -123,47 +154,19 @@ select {
     transition: all 0.1s ease-in;
 }
 
-.display {
-    display: none;
-}
-
-.questions input {
-    min-height: 15px;
-    min-width: 15px;
-}
-
-.questions input:focus {
-    border: 1px solid white;
-
-}
-
-.questions select:focus {
-    border: 2px solid white;
-}
-
 .sugestions textarea {
     min-height: 120px;
     width: 100%;
-    padding: 0.625rem;
+    padding: 10px;
     resize: vertical;
     background-color: #202231;
     color: white;
-}
-
-.sugestions textarea::placeholder {
-    color: white;
-    opacity: 0.7;
-}
-
-.sugestions textarea:focus {
-    border: 2px solid white;
 }
 
 button {
     width: 100%;
     height: 50px;
     padding: 10px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
