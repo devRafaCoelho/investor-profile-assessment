@@ -123,6 +123,10 @@ select {
     transition: all 0.1s ease-in;
 }
 
+.display {
+    display: none;
+}
+
 .questions input {
     min-height: 15px;
     min-width: 15px;
