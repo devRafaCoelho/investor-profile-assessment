@@ -61,7 +61,7 @@ form {
     font-size: 1.4rem;
 }
 
-.personal input,
+input,
 select,
 textarea,
 button {
@@ -101,15 +101,26 @@ select {
 }
 
 .questions {
-    display: none;
+    text-align: center;
 }
 
 .questions label {
     width: 100%;
+    min-height: 100px;
     display: flex;
-    align-items: baseline;
-    text-align: justify;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.questions label:hover {
+    background-color: white;
+    color: #202231;
+    transition: all 0.1s ease-in;
 }
 
 .questions input {
