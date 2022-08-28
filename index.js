@@ -10,7 +10,7 @@ const personal = [
         label: '',
         inputPlaceholder: ''
     }
-]
+];
 
 const questions = [
     {
@@ -85,5 +85,9 @@ const questions = [
         inputLabel4: '',
         inputLabel5: ''
     }
-]
+];
+
+
+
+
 

@@ -134,6 +134,10 @@ button {
     letter-spacing: 3px;
 }
 
+.card:hover img {
+    background-image: url('/assets/knowledge-dark-icon.svg');
+}
+
 #questions .specific {
     width: 100%;
     margin-bottom: 30px;
