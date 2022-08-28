@@ -121,6 +121,17 @@ button {
 .card:hover {
     background-color: white;
     transition: all 0.2s ease-in;
+    color: rgba(27, 27, 50, 0.8);
+}
+
+.card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    letter-spacing: 3px;
 }
 
 #questions .specific {
