@@ -14,7 +14,9 @@ cards.forEach((element, index) => {
 
         lastIndex.push(index);
 
-        if (lastIndex.length > 1) {
+        if (lastIndex.length > 1 && index === lastIndex[0]) {
+            lastIndex.shift();
+        } else if (lastIndex.length > 1 && index !== lastIndex[0]) {
             position[lastIndex[0]].classList.add('hidden');
             lastIndex.shift();
         }
