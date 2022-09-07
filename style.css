@@ -142,7 +142,7 @@ form {
 
 .questions-content label {
     width: 100%;
-    min-height: 100px;
+    min-height: 80px;
     padding: 0 15px;
     display: flex;
     align-items: center;

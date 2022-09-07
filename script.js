@@ -3,6 +3,7 @@ const cardsContainer = document.querySelector('.questions-cards');
 const content = document.querySelector('.questions-content');
 const position = document.querySelectorAll('.position');
 const image = document.querySelector('.questions-content img');
+let lastIndex = [];
 
 cards.forEach((element, index) => {
     element.addEventListener('click', (event) => {
@@ -10,8 +11,15 @@ cards.forEach((element, index) => {
         position[index].classList.remove('hidden');
         content.classList.remove('hidden');
         image.classList.remove('hidden');
+
+        lastIndex.push(index);
+
+        if (lastIndex.length > 1) {
+            position[lastIndex[0]].classList.add('hidden');
+            lastIndex.shift();
+        }
     });
-})
+});
 
 image.addEventListener('click', () => {
     cardsContainer.classList.remove('hidden');
