@@ -13,3 +13,8 @@ cards.forEach((element, index) => {
     });
 })
 
+image.addEventListener('click', () => {
+    cardsContainer.classList.remove('hidden');
+    content.classList.add('hidden');
+    image.classList.add('hidden');
+});
