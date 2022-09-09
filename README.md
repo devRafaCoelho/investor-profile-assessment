@@ -6,4 +6,4 @@ This form collects information regarding the user's financial management and wit
 
 #Screenshots
 
-![Project thumbnail]()
+![Project thumbnail](thumbnail.png)
