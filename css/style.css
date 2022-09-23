@@ -109,9 +109,14 @@ button:hover {
         font-size: 50%;
     }
 
+    header {
+        width: 90%;
+    }
+
     .card {
         width: 45%;
         min-height: 50px;
+
         letter-spacing: 1px;
     }
 
