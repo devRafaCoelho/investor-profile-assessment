@@ -80,7 +80,9 @@ button:hover {
         font-size: 80%;
     }
 
-
+    .card {
+        padding: 15px 0;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -89,7 +91,12 @@ button:hover {
     }
 
     .card {
-        width: 47%;
+        min-height: 65px;
+        padding: 10px 0;
+    }
+
+    .questions-content label {
+        min-height: 60px;
     }
 
     .questions-content img {
