@@ -1,0 +1,28 @@
+.sugestions {
+    width: 100%;
+}
+
+.sugestions label {
+    font-size: 1.4rem;
+}
+
+.sugestions textarea {
+    all: unset;
+    box-sizing: border-box;
+    min-height: 120px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    resize: vertical;
+    background-color: #202231;
+    color: white;
+}
+
+.sugestions textarea::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.sugestions textarea:focus {
+    border: 2px solid white;
+}
