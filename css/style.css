@@ -104,9 +104,18 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 50%;
+    }
+
     .card {
         width: 45%;
+        min-height: 50px;
         letter-spacing: 1px;
+    }
+
+    .sugestions textarea {
+        min-height: 80px;
     }
 }
