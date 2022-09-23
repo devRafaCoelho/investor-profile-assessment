@@ -87,32 +87,13 @@ button:hover {
 
 @media screen and (max-width: 480px) {
     html {
-        font-size: 70%;
-    }
-
-    .card {
-        min-height: 65px;
-        padding: 10px 0;
-    }
-
-    .questions-content label {
-        min-height: 60px;
-    }
-
-    .questions-content img {
-        width: 10%;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    html {
         font-size: 50%;
     }
 
     .card {
         width: 45%;
         min-height: 50px;
-
+        padding: 5px 0;
         letter-spacing: 1px;
     }
 
