@@ -103,3 +103,10 @@ button:hover {
         width: 10%;
     }
 }
+
+@media screen and (max-width: 412px) {
+    .card {
+        width: 45%;
+        letter-spacing: 1px;
+    }
+}
